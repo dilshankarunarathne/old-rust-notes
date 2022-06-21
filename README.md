@@ -218,7 +218,7 @@ fn main() {
 
 By using an enum, we can use it's members without having to state what the enum is every single time. 
 
----------------------------------------------------------------------------------------------------
+```rust
 fn main() {
 	use self::Room::*;
 	let t = Bedroom(Bed{size:50,count:2});
@@ -228,9 +228,9 @@ fn main() {
 		_ => 0, 
 	};
 }
----------------------------------------------------------------------------------------------------
+```
 
-Result and Option types
+# Result and Option types
 
 Result and Option are both enums. Result lets us return something and Option gives us a chance to choose if the returned result contains something or not, and what to do in either case.
 
