@@ -42,7 +42,7 @@ fn loop_to_10() {
 
 # Vectors
 
----------------------------------------------------------------------------------------------------
+```rust
 fn array_loop() {
 	let mut v = Vec::new();
 	v.push(4);
@@ -53,7 +53,7 @@ fn array_loop() {
 		println!("{}", n);
 	}
 }
----------------------------------------------------------------------------------------------------
+```
 
 All that to create a vector seems too much, so rust have given us a macro.
 
