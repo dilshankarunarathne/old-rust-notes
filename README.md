@@ -90,7 +90,7 @@ The & sign before the vector is used to make a pointer.
 
 # Strings in Rust
 
----------------------------------------------------------------------------------------------------
+```rust
 fn main() {
 	let s = String::from("Hello World");
 	for c in s.chars() {
@@ -100,11 +100,13 @@ fn main() {
 		println!(s);
 	}
 }
----------------------------------------------------------------------------------------------------
+```
 
-Just "Hello world" without the String:from is called an &str which is just a pointer to a slice of string whereas a string is equivalant to a vector. These two have subtle differences. The vector ownes the array. But the &str pointer just points to it. 
-To take a pointed string to another string, it has to copy all that the data. When we use an &str it will be only used as a pointer to the primary memory inside the binaries. The data will last as long as the lifecycle of the program. We cannot change it. We will not be able to push another few characters or a slice of a string to &str. But we can do that to a mutable String object. 
-If we check the length of a String object using the len method, we will get the number of bytes, not the number of characters. If we wanted to loop through the characters.
+Just "Hello world" without the String:from is called an &str which is just a pointer to a slice of string whereas a string is equivalant to a vector. These two have subtle differences. The vector ownes the array. But the &str pointer just points to it.  
+
+To take a pointed string to another string, it has to copy all that the data. When we use an &str it will be only used as a pointer to the primary memory inside the binaries. The data will last as long as the lifecycle of the program. We cannot change it. We will not be able to push another few characters or a slice of a string to &str. But we can do that to a mutable String object.  
+
+If we check the length of a String object using the len method, we will get the number of bytes, not the number of characters. If we wanted to loop through the characters.  
 If we want to know what the index is, we can iterate through char_indices().
 
 ---------------------------------------------------------------------------------------------------
