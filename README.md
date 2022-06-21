@@ -72,7 +72,7 @@ In rust, we can use continue and break keywords inside loops.
 
 If we wanted to break out of the outer loop instead of the inner loop, we need to create a label. Single quote mark is used to define a label.
 
----------------------------------------------------------------------------------------------------
+```rust
 fn array_loop() {
 	let v = vec![4,6,8,9];
 	'outer: for i in 0..10 {
@@ -84,7 +84,7 @@ fn array_loop() {
 		}
 	}	
 }
----------------------------------------------------------------------------------------------------
+```
 
 The & sign before the vector is used to make a pointer.
 
