@@ -262,14 +262,14 @@ fn main() {
 }
 ```
 
-Errors
+# Errors
 
----------------------------------------------------------------------------------------------------
+```rust
 match "3".parse::<f32>() {
 	Ok(v) => println!("Ok - {}", v),
 	Err(e) => println!("Error - {}", e),
 };
----------------------------------------------------------------------------------------------------
+```
 
 Err is also an enum. The same methods exists in this. So we could use unwrap or unwrap_or.
 
