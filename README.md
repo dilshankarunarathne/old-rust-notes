@@ -109,7 +109,7 @@ To take a pointed string to another string, it has to copy all that the data. Wh
 If we check the length of a String object using the len method, we will get the number of bytes, not the number of characters. If we wanted to loop through the characters.  
 If we want to know what the index is, we can iterate through char_indices().
 
----------------------------------------------------------------------------------------------------
+```rust
 fn main() {
 	let mut s = String::from("Hello World");
 	println!("S len = {}", s.len());
@@ -121,7 +121,7 @@ fn main() {
 		println!("{} = {}", i, c);
 	}
 }
----------------------------------------------------------------------------------------------------
+```
 
 Whenever we want to use a string in read-only, we can use an &str. Because it will not consume the string, it will only allow us to work with it without working with it. Any string can be use as an &str. We can use a String object as an &str by putting a & sign before the variable name of the string. 
 
