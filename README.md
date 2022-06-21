@@ -125,7 +125,7 @@ fn main() {
 
 Whenever we want to use a string in read-only, we can use an &str. Because it will not consume the string, it will only allow us to work with it without working with it. Any string can be use as an &str. We can use a String object as an &str by putting a & sign before the variable name of the string. 
 
----------------------------------------------------------------------------------------------------
+```rust
 let s = String::from("Hello world");
 println!("Result = {}", count_l(&s));
 fn count_l(s:&str)->i32 {
@@ -137,9 +137,9 @@ fn count_l(s:&str)->i32 {
 	}
 	res
 }
----------------------------------------------------------------------------------------------------
+```
 
-Struct and Methods
+# Struct and Methods
 
 We can use the keyword pub infront of the struct keyword to make a struct public, so we can use it outside the project. 
 
