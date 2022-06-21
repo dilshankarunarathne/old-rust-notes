@@ -190,11 +190,11 @@ fn main() {
 }
 ```
 
-Enums and Pattern Matching
+# Enums and Pattern Matching
 
 Enums in Rust are used extensively throughout the standard library. As long as all the members in a struct or an enum derives Debug, we can derive the struct or the enum from Debug.
 
----------------------------------------------------------------------------------------------------
+```rust
 #[derive(Debug)]
 pub struct Bed {
 	size:i32;
@@ -214,7 +214,7 @@ fn main() {
 		d => println!("{:d}", d), 
 	}
 }
----------------------------------------------------------------------------------------------------
+```
 
 By using an enum, we can use it's members without having to state what the enum is every single time. 
 
