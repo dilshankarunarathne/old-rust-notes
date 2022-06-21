@@ -143,7 +143,7 @@ fn count_l(s:&str)->i32 {
 
 We can use the keyword pub infront of the struct keyword to make a struct public, so we can use it outside the project. 
 
----------------------------------------------------------------------------------------------------
+```rust
 #[derive(Debug)]
 struct User {
 	name:String,
@@ -160,9 +160,9 @@ fn main() {
 	};
 	println!("User is {:?}", u);
 }
----------------------------------------------------------------------------------------------------
+```
 
----------------------------------------------------------------------------------------------------
+```rust
 struct User {
 	name:String,
 	age:i32,
@@ -188,7 +188,7 @@ fn main() {
 	u.grow(20);
 	println!("User is {}", u.simple_string());
 }
----------------------------------------------------------------------------------------------------
+```
 
 Enums and Pattern Matching
 
