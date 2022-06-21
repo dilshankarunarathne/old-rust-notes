@@ -88,7 +88,7 @@ fn array_loop() {
 
 The & sign before the vector is used to make a pointer.
 
-Strings in Rust
+# Strings in Rust
 
 ---------------------------------------------------------------------------------------------------
 fn main() {
