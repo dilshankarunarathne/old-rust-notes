@@ -273,7 +273,7 @@ match "3".parse::<f32>() {
 
 Err is also an enum. The same methods exists in this. So we could use unwrap or unwrap_or.
 
----------------------------------------------------------------------------------------------------
+```rust
 use std::env::args;
 fn get_arg(n:usize) ->Result<String,String> {
 	for (i,a) in args().enumerate() {
@@ -283,9 +283,9 @@ fn get_arg(n:usize) ->Result<String,String> {
 	}
 	Err("Not enough Args".to_string());
 }
----------------------------------------------------------------------------------------------------
+```
 
-Traits
+# Traits
 
 ---------------------------------------------------------------------------------------------------
 use std::ops::Add;
