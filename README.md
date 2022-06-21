@@ -234,7 +234,7 @@ fn main() {
 
 Result and Option are both enums. Result lets us return something and Option gives us a chance to choose if the returned result contains something or not, and what to do in either case.
 
----------------------------------------------------------------------------------------------------
+```rust
 use std::collections::HashMap;
 fn main() {
 	let mut hm = HashMap::new();
@@ -246,12 +246,12 @@ fn main() {
 	};
 	println!("{}", r);
 }
----------------------------------------------------------------------------------------------------
+```
 
-The get function asks for a pointer. The r came back as an option.
+The get function asks for a pointer. The r came back as an option.  
 Option types have a wide varity of functions we could use. The unwrap method, will return the Some value, if it have a Some value, but if we get a None, the program will panic. But we can use unwrap_or function to stop getting a panic. 
 
----------------------------------------------------------------------------------------------------
+```rust
 use std::collections::HashMap;
 fn main() {
 	let mut hm = HashMap::new();
@@ -260,7 +260,7 @@ fn main() {
 	let r = match hm.get(&4).unwrap_or(&"NoString");
 	println!("{}", r);
 }
----------------------------------------------------------------------------------------------------
+```
 
 Errors
 
