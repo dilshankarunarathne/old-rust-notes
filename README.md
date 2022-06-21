@@ -57,18 +57,18 @@ fn array_loop() {
 
 All that to create a vector seems too much, so rust have given us a macro.
 
----------------------------------------------------------------------------------------------------
+```rust
 fn array_loop() {
 	let v = vec![4,6,8,9];
 	for n in v {
 		println!("{}", n);
 	}
 }
----------------------------------------------------------------------------------------------------
+```
 
 In rust, we can use continue and break keywords inside loops. 
 
-Nested Loops
+# Nested Loops
 
 If we wanted to break out of the outer loop instead of the inner loop, we need to create a label. Single quote mark is used to define a label.
 
