@@ -1,4 +1,4 @@
-Introduction to Rust
+# Introduction to Rust
 
 ```rust
 fn main() {
@@ -6,7 +6,7 @@ fn main() {
 }
 ```
 
-Loops
+# Loops
 
 ```rust
 fn loop_to_10() {
